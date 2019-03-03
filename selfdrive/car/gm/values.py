@@ -11,6 +11,7 @@ class CAR:
   MALIBU = "CHEVROLET MALIBU PREMIER 2017"
   ACADIA = "GMC ACADIA DENALI 2018"
   BUICK_REGAL = "BUICK REGAL ESSENCE 2018"
+  SAAB_95 = "Saab 9-5NG"
 
 SUPERCRUISE_CARS = [CAR.CADILLAC_CT6]
 
@@ -97,7 +98,19 @@ FINGERPRINTS = {
   {
     190: 6, 193: 8, 197: 8, 199: 4, 201: 8, 208: 8, 209: 7, 211: 2, 241: 6, 249: 8, 288: 5, 289: 8, 298: 8, 304: 1, 309: 8, 313: 8, 320: 3, 322: 7, 328: 1, 338: 6, 340: 6, 352: 5, 381: 8, 384: 4, 386: 8, 388: 8, 393: 8, 398: 8, 413: 8, 417: 7, 419: 1, 422: 4, 426: 7, 431: 8, 442: 8, 451: 8, 452: 8, 453: 6, 454: 8, 455: 7, 462: 4, 463: 3, 479: 3, 481: 7, 485: 8, 489: 8, 497: 8, 499: 3, 500: 6, 501: 8, 508: 8, 510: 8, 532: 6, 554: 3, 560: 8, 562: 8, 563: 5, 564: 5, 567: 5, 573: 1, 577: 8, 608: 8, 609: 6, 610: 6, 611: 6, 612: 8, 613: 8, 647: 6, 707: 8, 715: 8, 717: 5, 753: 5, 761: 7, 840: 5, 842: 5, 844: 8, 866: 4, 869: 4, 880: 6, 961: 8, 969: 8, 977: 8, 979: 8, 985: 5, 1001: 8, 1005: 6, 1009: 8, 1017: 8, 1020: 8, 1033: 7, 1034: 7, 1105: 6, 1217: 8, 1221: 5, 1225: 8, 1233: 8, 1249: 8, 1257: 6, 1265: 8, 1267: 1, 1280: 4, 1296: 4, 1300: 8, 1322: 6, 1328: 4, 1417: 8, 1601: 8, 1906: 7, 1907: 7, 1912: 7, 1914: 7, 1919: 7, 1920: 7, 1930: 7, 2016: 8, 2024: 8
   }],
+#  CAR.SAAB_95: [
+#  # Saab 9-5 MY 10-12 with EPAS from Insignia. Eventuellt behover denna utokas med fler. Fingerprint taget fran gammal loggdata pa HS-CAN
+#  {
+#    16:	7, 64:	8, 177:	2, 190:	2, 193:	8, 197:	8, 201:	8, 241:	4, 249:	8, 288:	5, 298:	8, 304:	1, 309:	8, 311:	8, 313:	8, 320:	3, 352:	5, 381:	6, 386:	3, 389:	2, 398:	8, 401:	8, 417:	7, 451:	8, 452:	8, 453:	6, 455:	7, 485:	8, 489:	8, 491:	2, 493:	8, 495:	4, 497:	8, 499:	3, 501:	8, 507:	2, 532:	6, 536:	8, 560:	8, 562:	7, 570:	8, 707:	8, 715:	8, 717:	8, 761:	7, 810:	8, 840:	4, 842:	4, 869:	8, 880:	8, 894:	1, 961:	8, 969:	8, 977:	8, 1001:	8, 1009:	8, 1017:	8, 1019:	2, 1105:	6, 1217:	8, 1221:	2, 1225:	4, 1233:	8, 1241:	3, 1257:	6, 1265:	8, 1267:	1, 1280:	4, 1296:	8, 1300:	8, 1328:	4, 1417:	7, 1904:	7, 1906:	7, 1915:	8, 1916:	7, 1917:	7
+#  }],
+  CAR.SAAB_95: [
+  # Saab 9-5 MY 10-12 with EPAS from Insignia. Eventuellt behover denna utokas med fler. Fingerprint taget fran gammal loggdata pa HS-CAN
+  {
+    177: 2, 190: 2, 193: 8, 197: 8, 201: 8, 241: 4, 249: 8, 288: 5, 298: 8, 304: 1, 309: 8, 311: 8, 313: 8, 320: 3, 352: 5, 381: 6, 386: 3,389: 2, 398: 8, 401: 8, 417: 7, 451: 8, 452: 8, 453: 6, 455: 7, 481: 7, 485: 8, 489: 8, 491: 2, 493: 8, 495: 4, 497: 8, 499: 3, 501: 8, 507: 2, 532: 6, 560: 8, 562: 7, 707: 8, 761: 7, 810: 8, 840: 4, 842: 4, 880: 6, 894: 1, 961: 8, 969: 8, 977: 8, 1001: 8, 1009: 8, 1017: 8, 1019: 2, 1105: 6, 1217: 8, 1221: 2, 1225: 4, 1233: 8, 1241: 3, 1249: 8, 1257: 6, 1265: 8, 1267: 1, 1280: 4, 1300: 8, 1328: 4, 1417: 7, 1904: 7, 1906: 7, 1916: 7, 1917: 7
+  }],
 }
+
+
 
 STEER_THRESHOLD = 1.0
 
@@ -109,6 +122,7 @@ STOCK_CONTROL_MSGS = {
   CAR.CADILLAC_ATS: [384, 715], # 384 = "ASCMLKASteeringCmd", 715 = "ASCMGasRegenCmd"
   CAR.BUICK_REGAL: [384, 715], # 384 = "ASCMLKASteeringCmd", 715 = "ASCMGasRegenCmd"
   CAR.CADILLAC_CT6: [], # CT6 does not require ASCMs to be disconnected
+  CAR.SAAB_95: [384, 715], #0x180 (Does not exist on Saab 9_5 HS_BUS, is most likely 0x337, 0x2CB(PPEI_Adaptive_Cruise_Axl_Trq_Req)
 }
 
 DBC = {
@@ -119,4 +133,5 @@ DBC = {
   CAR.CADILLAC_ATS: dbc_dict('gm_global_a_powertrain', 'gm_global_a_object', chassis_dbc='gm_global_a_chassis'),
   CAR.BUICK_REGAL: dbc_dict('gm_global_a_powertrain', 'gm_global_a_object', chassis_dbc='gm_global_a_chassis'),
   CAR.CADILLAC_CT6: dbc_dict('cadillac_ct6_powertrain', 'cadillac_ct6_object', chassis_dbc='cadillac_ct6_chassis'),
+  CAR.SAAB_95: dbc_dict('gm_global_a_powertrain', 'gm_global_a_object', chassis_dbc='gm_global_a_chassis'), //Might be subject to change
 }
