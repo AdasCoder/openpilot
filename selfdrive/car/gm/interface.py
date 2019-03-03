@@ -135,6 +135,17 @@ class CarInterface(object):
       ret.steerRatio = 14.6   # it's 16.3 without rear active steering
       ret.steerRatioRear = 0. # TODO: there is RAS on this car!
       ret.centerToFront = ret.wheelbase * 0.465
+      
+    elif candidate == CAR.SAAB_95:
+      # engage speed is decided by pcm
+      ret.minEnableSpeed = 8.33 #m/s = 30 km/h
+      # kg of standard extra cargo to count for driver, gas, etc...
+      ret.mass = 1805 + std_cargo
+      ret.safetyModel = car.CarParams.SafetyModels.gm #TODO: This is not yet implemented
+      ret.wheelbase = 2.837
+      ret.steerRatio = 14.4   # TODO: NOT KNOWN
+      ret.steerRatioRear = 0. 
+      ret.centerToFront = ret.wheelbase * 0.4 #TODO: THIS IS A GUESS
 
 
     # hardcoding honda civic 2016 touring params so they can be used to
